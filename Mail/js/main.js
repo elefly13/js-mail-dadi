@@ -9,19 +9,25 @@ console.log(mailUtente);
 
 var utentiRegistrati = ["pippo@gmail.com", "pluto@libero.it", "paperino@aruba.it", "paperina@gmail.com"];
 
-console.log(utentiRegistrati);
+var controlloMail = false;
 
-for (var i = 0; i == utentiRegistrati.length; i++) {
+for (var i = 0; i < utentiRegistrati.length; i++) {
 
-    if (mailUtente != utentiRegistrati.length) {
-        console.log(prompt("Prima ti devi registrare"));
+    if (mailUtente == utentiRegistrati[i]) {
+        console.log("Digita la password");
+        controlloMail = true;
+        document.getElementById("registrati").innerHTML = "Felice di rivederti ora digita la password";
     }
-    else {
-        console.log(prompt("Digita la password"));
-    }
+  
     
 }
+
 //stampa un messaggio appropriato sull’esito del controllo.
+
+    if (controlloMail == false) {
+        console.log("ti devi registrare");
+        document.getElementById("registrati").innerHTML = "Non sei ancora registrato, accedi all'area Nuovo Utente";
+    }
 
 
 

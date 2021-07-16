@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding-top: 100px;
+}
+.contenitore {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    height: 300px;
+    background-color: lightgrey;
+    margin: auto;
+    
+}
+.dado-giocatore {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.dado-computer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+h1 {
+    font-size: 100px;
+    line-height: 200px;
+    text-align: center;
+    color: white;
+}
+.box-risultato {
+    width: 300px;
+    height: 150px;
+}
+h2 {
+    font-size: 50px;
+    line-height: 150px;
+    text-align: center;
+    color: black;
+}
+h3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+
+}
+
+.bottone {
+    width: 110px;
+    margin: auto;
+    cursor: pointer;
+   
+    
+}
+button {
+    padding: 20px;
+    background-color: rgb(168, 168, 168);
+    margin: auto;
+    border-radius: 20px;
+}
